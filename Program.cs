@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ProfessionalGYM.AppDb;
+using ProfessionalGYM.Inject_Services;
 using System;
 namespace ProfessionalGYM
 {
@@ -20,7 +21,7 @@ namespace ProfessionalGYM
             builder.Services.AddDbContext<GymDB>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
 
             builder.Services.AddControllers();
-          //  builder.Services.AddCustomServices();
+           builder.Services.AddCustomServices();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
