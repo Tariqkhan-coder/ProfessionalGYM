@@ -12,10 +12,10 @@ using ProfessionalGYM.Models.Entity.Workout;
 
 namespace ProfessionalGYM.AppDb
 {
-    public class AppDb : DbContext
+    public class GymDB : DbContext
     {
 
-        public AppDb(DbContextOptions<AppDb> options)
+        public GymDB(DbContextOptions<GymDB> options)
         : base(options)
         {
 
