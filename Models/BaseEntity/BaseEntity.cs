@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 
 
+
 namespace ProfessionalGYM.Models.BaseEntity
 {
     public class BaseEntity

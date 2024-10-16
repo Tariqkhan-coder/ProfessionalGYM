@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using ProfessionalGYM.Models.BaseEntity; 
 
 namespace ProfessionalGYM.Models.Entity.UserEntity
 {
@@ -45,6 +47,7 @@ namespace ProfessionalGYM.Models.Entity.UserEntity
         [MaxLength(300)]
         public string ProfileImageUrl { get; set; } = "";
         public bool IsEmailVerified { get; set; } = false;
+ 
         public bool IsBlocked { get; set; } = false;
 
        

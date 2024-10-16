@@ -1,4 +1,5 @@
-﻿using ProfessionalGYM.Services.UserService;
+﻿using ProfessionalGYM.Interfaces.IUser;
+using ProfessionalGYM.Services.UserService;
 
 namespace ProfessionalGYM.Inject_Services
 {
@@ -7,7 +8,7 @@ namespace ProfessionalGYM.Inject_Services
         public static void AddCustomServices(this IServiceCollection services)
         {
 
-            services.AddScoped<UserService>();
+            services.AddScoped<IUser,UserServices>();
 
            
         }
